@@ -93,7 +93,7 @@ for (int i = 1; i < argc; ++i)
 }
 ```
 
-After loop we calculate average:
+After loop we calculate average and print sum, min, max, count:
 
 ```c
 double avg = (count > 0) ? (double)sum / count : 0;
