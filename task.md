@@ -10,8 +10,8 @@ if (argc != 4)
     printf("Usage: %d <num1> <operator> <num2>\n", argv[0]);
     return 1;
 }
-int num1 = atoi(argv[1]);
-int num2 = atoi(argv[3]);
+int num1 = myatoi(argv[1]);
+int num2 = myatoi(argv[3]);
 char op = argv[2][0];
 int result;
 ```
@@ -54,7 +54,7 @@ Make `for` loop were we convert each argument to a number using `atoi` and sums 
 ```c
 for (int i = 1; i < argc; ++i) 
 {
-    int val = atoi(argv[i]);
+    int val = myatoi(argv[i]);
     sum += val;
 }
 ```
@@ -79,7 +79,7 @@ Makes `for` loop were with `if` statment finding min, max, sum and count:
 int sum = 0;
 for (int i = 1; i < argc; ++i) 
 {
-    int val = atoi(argv[i]);
+    int val = myatoi(argv[i]);
     if (val < min) 
     {
         min = val;
