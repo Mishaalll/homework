@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include "myatoi.h"
 
 int main(int argc, char *argv[]) 
 {
@@ -8,8 +8,8 @@ int main(int argc, char *argv[])
         printf("Usage: %d <num1> <operator> <num2>\n", argv[0]);
         return 1;
     }
-    int num1 = atoi(argv[1]);
-    int num2 = atoi(argv[3]);
+    int num1 = myatoi(argv[1]);
+    int num2 = myatoi(argv[3]);
     char op = argv[2][0];
     int result;
 
