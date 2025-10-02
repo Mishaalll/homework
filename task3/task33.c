@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include "myatoi.h"
 
 int main(int argc, char *argv[]) 
 {
@@ -9,11 +9,11 @@ int main(int argc, char *argv[])
         return 0;
     }
     int sum = 0, count = 0;
-    int min = atoi(argv[1]);
-    int max = atoi(argv[1]);
+    int min = myatoi(argv[1]);
+    int max = myatoi(argv[1]);
     for (int i = 1; i < argc; ++i) 
     {
-        int val = atoi(argv[i]);
+        int val = myatoi(argv[i]);
         if (val < min) 
         {
             min = val;
