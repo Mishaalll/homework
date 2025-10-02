@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include "myatoi.h"
 
 int main(int argc, char *argv[]) 
 {
@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
              {
                 if (i + 1 < argc) 
                 {
-                    number = atoi(argv[i + 1]);
+                    number = myatoi(argv[i + 1]);
                     i++;
                 } 
                 else 
