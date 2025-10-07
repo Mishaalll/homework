@@ -19,14 +19,13 @@ task23:
 	$(cc) task23.c -o task23.o
 
 task31:
-	$(cc) task31.c -o task31.o
+	$(cc) task31.c myatoi.c -o task31.o
 
 task32:
-	$(cc) task32.c -o task32.o
+	$(cc) task32.c myatoi.c -o task32.o
 
 task33:
-	$(cc) task33.c -o task33.o
-
+	$(cc) task33.c myatoi.c -o task33.o
 task41:
 	$(cc) task41.c -o task41.o
 
@@ -40,6 +39,4 @@ task51:
 	$(cc) task51.c -o task51.o
 
 task52:
-	$(cc) task52.c -o task52.o
-
-//$(ARGS)
+	$(cc) task52.c myatoi.c -o task52.o
